@@ -1,0 +1,78 @@
+{
+  "name": "@selentia/async-limiter",
+  "version": "1.0.0",
+  "description": "Zero-runtime-deps concurrency limiter with FIFO queueing, safe cleanup, and idle waiting (Node + Browser).",
+  "keywords": [
+    "limiter",
+    "concurrency",
+    "async",
+    "promise",
+    "queue",
+    "fifo",
+    "p-limit",
+    "abortsignal",
+    "abort",
+    "timeout",
+    "idle",
+    "onIdle",
+    "queue-timeout",
+    "queue-overflow",
+    "scheduler",
+    "throttle",
+    "pool",
+    "node",
+    "browser",
+    "utility"
+  ],
+  "license": "MIT",
+  "author": "selentia",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md",
+    "README_KO.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selentia/async-limiter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/selentia/async-limiter/issues"
+  },
+  "homepage": "https://github.com/selentia/async-limiter#readme",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run clean && npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
