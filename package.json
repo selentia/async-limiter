@@ -1,6 +1,6 @@
 {
   "name": "@selentia/async-limiter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero-runtime-deps concurrency limiter with FIFO queueing, safe cleanup, and idle waiting (Node + Browser).",
   "keywords": [
     "limiter",
