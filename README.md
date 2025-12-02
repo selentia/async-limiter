@@ -1,4 +1,4 @@
-# @selentia/async-retry
+# @selentia/async-limiter
 
 <p align="center">
   <img src="https://img.shields.io/badge/coverage-100%25%20stmts%20%7C%2097.27%25%20branches-brightgreen" />
