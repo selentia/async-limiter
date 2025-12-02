@@ -13,7 +13,7 @@ Runs on Node.js ≥18 and modern browsers.
 > Used in production by [Pastellink](https://pastellink.duna.me), a Discord bot trusted by 2,500+ servers.
 
 📄 **Other languages**:
-- [🇰🇷 한국어 문서](./README.KO.md)
+- [🇰🇷 한국어 문서](./docs/README.KO.md)
 
 ---
 
